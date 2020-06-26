@@ -139,11 +139,6 @@ const SectionFullComponent = props => {
         const contentEvent = data.allDatoCmsEvent.nodes[index]
         const contentTutorial = data.allDatoCmsTutorial.nodes[index]
 
-        let disqusConfig = {
-          shortname: process.env.GATSBY_DISQUS_NAME,
-          config: { identifier: contentService.id },
-        }
-
         return (
           <>
             <Section theme={theme}>
@@ -320,12 +315,7 @@ const SectionFullComponent = props => {
                   )}
                   {/* START TUTORIAL */}
                 </Content>
-                <Footer theme={theme}>
-                  <DiscussionEmbed
-                    style={{ width: "100%" }}
-                    {...disqusConfig}
-                  />
-                </Footer>
+                <Footer theme={theme}></Footer>
               </Row>
             </Section>
           </>

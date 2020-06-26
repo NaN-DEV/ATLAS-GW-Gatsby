@@ -5,14 +5,15 @@ exports.createPages = async ({ graphql, actions }) => {
     query allService {
       allDatoCmsService {
         nodes {
+          id
           slug
           city
           title
           excerpt
           mainImage {
             alt
-            title
             url
+            title
           }
         }
       }
@@ -24,8 +25,8 @@ exports.createPages = async ({ graphql, actions }) => {
           excerpt
           mainImage {
             alt
-            title
             url
+            title
           }
         }
       }
@@ -37,8 +38,8 @@ exports.createPages = async ({ graphql, actions }) => {
           excerpt
           mainImage {
             alt
-            title
             url
+            title
           }
         }
       }
@@ -46,7 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   queryResults.data.allDatoCmsService.nodes.forEach((content, index) => {
     createPage({
-      path: `/uslugi/${content.city}/${content.slug}`,
+      path: `/uslugi${content.city ? `` : `/${content.city}`}/${content.slug}`,
       component: require.resolve(`./src/templates/service.js`),
       context: { content, index },
     })
