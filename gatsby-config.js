@@ -9,7 +9,6 @@ module.exports = {
   plugins: [
     { resolve: `gatsby-plugin-sharp` },
     { resolve: `gatsby-plugin-layout` },
-    { resolve: `gatsby-plugin-next-seo` },
     { resolve: "gatsby-background-image" },
     { resolve: `gatsby-plugin-react-svg` },
     { resolve: `gatsby-transformer-sharp` },
