@@ -1,5 +1,5 @@
 // IMPORT PLUGIN
-import React from "react'
+import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 // IMPORT COMPONENT
