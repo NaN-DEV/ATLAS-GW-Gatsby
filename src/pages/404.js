@@ -1,6 +1,5 @@
 // IMPORT PLUGIN
-import React from "react"
-import { GatsbySeo } from "gatsby-plugin-next-seo"
+import React from "react'
 import { StaticQuery, graphql, Link } from "gatsby"
 
 // IMPORT COMPONENT
