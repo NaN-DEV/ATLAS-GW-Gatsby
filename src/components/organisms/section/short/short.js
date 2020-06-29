@@ -64,11 +64,7 @@ const SectionShortComponent = props => {
                     {tutorial && (
                       <Link to={`/poradniki/${item.slug}`}>Więcej</Link>
                     )}
-                    {service && (
-                      <Link to={`/uslugi/${item.city}/${item.slug}`}>
-                        Więcej
-                      </Link>
-                    )}
+                    {service && <Link to={`/uslugi/${item.slug}`}>Więcej</Link>}
                   </Footer>
                 </Row>
               </Section>

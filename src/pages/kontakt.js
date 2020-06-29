@@ -49,7 +49,6 @@ const IndexPage = () => {
                 cardType: "summary_large_image",
               }}
             />
-            <Section short service content={data.allDatoCmsService.nodes} />
           </>
         )
       }}
